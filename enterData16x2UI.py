@@ -45,14 +45,14 @@ while True:
       Popen('sudo rm data.txt', shell=True)
       #Clear screen     
       Popen('sudo bw_tool -I -D /dev/i2c-1 -a 94 -w 10:0', shell=True)
-	  Popen('sudo bw_tool -I -D /dev/i2c-1 -a 94 -t "Saved"', shell=True)
+      Popen('sudo bw_tool -I -D /dev/i2c-1 -a 94 -t "Saved"', shell=True)
       time.sleep(2)
       break
 
 # option to exit completely without saving. 
   if (lastchar == "-"): #replace char with something?
       Popen('sudo rm data.txt', shell=True)
-	  Popen('sudo bw_tool -I -D /dev/i2c-1 -a 94 -t "Cancelled"', shell=True)
+      Popen('sudo bw_tool -I -D /dev/i2c-1 -a 94 -t "Cancelled"', shell=True)
       time.sleep(2)
 	  break
 
