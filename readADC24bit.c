@@ -5,11 +5,9 @@
 #include <time.h>
 #include <string.h>
 #include "minIni.h"
-//gpio -g mode 11 out --> 14 in wPi
-//gpio -g mode 9 in  --> 13 in wPi
+
 #define CLK 14
 #define DATA 13
-//#define mydigitalRead(x) (digitalRead((x)) & 1)
 
 const char inifile[] = "/home/pi/config.ini";
 
@@ -66,29 +64,7 @@ int main() {
      }
      weight = weight/(y);
 
-/*
-    while(weight ==0 || z==50)
-    { z=z+1;
-      weight=0;
-      if (digitalRead (DATA) == 0)
-     {
-     for(y = 0; y<3 || z==50; y++)
-     {if (digitalRead (DATA) == 0)
-       {
-       weight = weight + ((rawADC(twoCompVal) - zeroweight)/calibVal);
-       }
-      else {y = y-1;
-            z = z+1;
-           } 
-     }
-    weight = weight/(y);
-*/
-
     printf("%.2f \n", weight); 
-//    char* uiWeight= "sudo bw_tool -I -D /dev/i2c-1 -a 94 -t '" + weight + "'");
-//    system("sudo bw_tool -I -D /dev/i2c-1 -a 94 -w 10:0");
-//    system(uiWeight);
-//    delay(50);
      }
     }
 }
