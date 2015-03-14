@@ -2,7 +2,7 @@ Data logging using Raspberry Pi, Bit Uizard UI, and power management.
 
 Components 
 - Log sensor values grouped by entered/loaded category data
-- Upload data to MySQL sever via, JSON, Requests and Pyramid (3g connection)
+- Upload data to MySQL sever via, JSON, Requests and Pyramid; or to an online service like Plotly (3g connection).
 - Load category data from CSPro (PDA) or ODK (Android)
 - Enter category data using keyboard entry
 - Set power on/off cycles (for long term battery/solar operated logging)
