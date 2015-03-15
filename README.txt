@@ -1,4 +1,4 @@
-Data logging using Raspberry Pi, Bit Uizard UI, and power management.
+Data logging using Raspberry Pi, Bit Wizard UI, and power management.
 
 Components 
 - Log sensor values grouped by entered/loaded category data
